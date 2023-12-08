@@ -1,0 +1,90 @@
+:root {
+  --navbar-padding: 100px;
+  --navbar-height: fit-content;
+  --nav-link-margin-right: 10px;
+  --mentero-text-padding: 0;
+  --mentero-text-font-size: 30px;
+  --mentero-text-color: black;
+  --login-button-width: 101px;
+  --login-button-height: 41px;
+  --login-button-padding: 10px 30px;
+  --login-button-border-radius: 40px;
+  --login-button-border: 1px solid #0896FF;
+  --login-button-gap: 10px;
+  --login-button-background: linear-gradient(0deg, #0896FF, #0896FF),
+                                linear-gradient(0deg, #FFFFFF, #FFFFFF);
+  --login-text-width: 41px;
+  --login-text-height: 21px;
+  --login-text-font-family: 'Mint Grotesk Trial', sans-serif;
+  --login-text-font-size: 14px;
+  --login-text-font-weight: 600;
+  --login-text-line-height: 21px;
+  --login-text-letter-spacing: 0px;
+  --login-text-text-align: left;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: var(--navbar-height);
+  padding: 10px var(--navbar-padding);
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-right: var(--nav-link-margin-right);
+}
+
+.mentero-text {
+  padding: var(--mentero-text-padding);
+  font-size: var(--mentero-text-font-size);
+  color: var(--mentero-text-color);
+}
+
+.login-button {
+  width: var(--login-button-width);
+  height: var(--login-button-height);
+  padding: var(--login-button-padding);
+  border-radius: var(--login-button-border-radius);
+  border: var(--login-button-border);
+  gap: var(--login-button-gap);
+  background: var(--login-button-background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-text {
+  width: var(--login-text-width);
+  height: var(--login-text-height);
+  font-family: var(--login-text-font-family);
+  font-size: var(--login-text-font-size);
+  font-weight: var(--login-text-font-weight);
+  line-height: var(--login-text-line-height);
+  letter-spacing: var(--login-text-letter-spacing);
+  text-align: var(--login-text-text-align);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.link {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .login-button {
+    display: none;
+  }
+  .link {
+    display: block;
+  }
+}

@@ -1,0 +1,103 @@
+:root {
+    --circle-border-radius: 50%;
+    --circle-bg-color: rgba(235, 247, 239, 1);
+    --card-bg-color: rgba(245, 245, 245, 1);
+    --card-padding: 30px;
+    --card-margin: 10px;
+    --margin-10: 10px;
+    --flex-gap: 15px;
+    --flex-gap-large: 40px;
+    --container-padding: 40px;
+    --font-inter: Inter;
+    --font-mint-grotesk: Mint Grotesk Trial;
+  }
+  
+  .circleCard {
+    border-radius: var(--circle-border-radius);
+    background-color: var(--circle-bg-color);
+    width: 100px;
+    height: 100px;
+  }
+  
+  .card2 {
+    background-color: var(--card-bg-color);
+    padding: var(--card-padding);
+    margin: var(--card-margin);
+  }
+  
+  .b1 {
+    margin: var(--margin-10);
+  }
+  
+  .d-flex1 {
+    display: flex;
+    gap: var(--flex-gap);
+    justify-content: space-between;
+  }
+  
+  .d-flex2 {
+    display: flex;
+    gap: var(--flex-gap-large);
+    justify-content: space-between;
+  }
+  
+  .cont {
+    padding: var(--container-padding);
+  }
+  
+  .mb-20 {
+    margin-bottom: 20px; /* Adjusted value for clarity */
+  }
+  
+  .circle-txt,
+  .studentwm,
+  .p-txt,
+  .place {
+    font-family: var(--font-inter);
+  }
+  
+  .mentorship,
+  .insideC {
+    font-family: var(--font-mint-grotesk);
+  }
+  
+  .circle-txt,
+  .insideC,
+  .p-txt,
+  .place {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0px;
+  }
+  
+  .mentorship {
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 46px;
+  }
+  
+  .studentwm {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    background-color: var(--card-bg-color);
+    padding: 6px 20px;
+  }
+  
+  .place {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 22px;
+    text-align: left;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .d-flex1,
+    .d-flex2 {
+      flex-direction: column;
+    }
+  }
+  
